@@ -21,6 +21,6 @@ try:
 	answer = driver.find_element_by_id('answer').send_keys(math_x)
 	solve = driver.find_element_by_id('solve').click()
 finally:
-	time.sleep(5)
+	time.sleep(6)
 	driver.close()
 	driver.quit()
