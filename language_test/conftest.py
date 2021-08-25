@@ -3,7 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
 def pytest_addoption(parser):
-    parser.addoption('--driver_name', action='store', default=None, help='Choose driver: chrome or firefox')
+    parser.addoption('--driver_name', action='store', default='chrome', help='Choose driver: chrome or firefox')
     parser.addoption('--language', action='store', default=None, help='Choose your language: ru, en, fr...')
 
 # #as Chrome
