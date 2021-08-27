@@ -15,3 +15,6 @@ pytest==6.2.4 \
 selenium==3.141.0 \
 toml==0.10.2 \
 urllib3==1.26.6
+
+
+Add Page Objects
