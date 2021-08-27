@@ -19,3 +19,11 @@ class ProductPageLocators():
                      '.btn-add-to-basket')
     PRICE_TO_CART = (By.CSS_SELECTOR,
                      '.basket-mini > strong')
+    NAME_PRODUCT = (By.CSS_SELECTOR,
+                    '.product_main > h1')
+    ALERT_NAME = (By.CSS_SELECTOR,
+                  '.alertinner > strong')
+    PRODUCT_PRICE = (By.CSS_SELECTOR,
+                     '.product_main > .price_color')
+    CART_PRICE = (By.CSS_SELECTOR,
+                  '.basket-mini')
