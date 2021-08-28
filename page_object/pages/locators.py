@@ -26,4 +26,4 @@ class ProductPageLocators():
     PRODUCT_PRICE = (By.CSS_SELECTOR,
                      '.product_main > .price_color')
     CART_PRICE = (By.CSS_SELECTOR,
-                  '.basket-mini')
+                  '.alertinner p strong')

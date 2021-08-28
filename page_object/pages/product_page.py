@@ -21,6 +21,7 @@ class ProductPage(BasePage):
         assert alert_name == name
 
     def should_be_card_and_product_price(self):
-        price_product = self.driver.find_element(*ProductPageLocators.PRODUCT_PRICE).text.split(' ')[0]
-        price_cart = self.driver.find_element(*ProductPageLocators.CART_PRICE).text.split(' ')[3]
-        assert price_product == price_cart, 'Price !='
+        price_product = self.driver.find_element(*ProductPageLocators.PRODUCT_PRICE).text
+        price_cart = self.driver.find_element(*ProductPageLocators.CART_PRICE).text
+        print(price_cart)
+        assert price_product == price_cart, 'Price cart != price product'
