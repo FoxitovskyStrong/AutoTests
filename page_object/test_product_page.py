@@ -10,12 +10,12 @@ import pytest
                                   "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer5",
                                   "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer6",
                                   pytest.param(
-                                      "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer7",
-                                      marks=pytest.mark.xfail),
+	                                  "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer7",
+	                                  marks=pytest.mark.xfail),
                                   "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer8",
                                   "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer9"])
 def test_to_add_to_cart_botton(driver, link):
-    link = link
-    page = ProductPage(driver, link)
-    page.open()
-    page.should_be_add_to_card()
+	link = link
+	page = ProductPage(driver, link)
+	page.open()
+	page.should_be_add_to_card()
